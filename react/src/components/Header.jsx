@@ -1,46 +1,120 @@
-import { useState } from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
-  const [activeLink, setActiveLink] = useState('home'); // initial active link is 'home'
-
-  const closeNav = () => {
-    setSidenavOpen(false);
-  };
-
-  const openNav = () => {
-    setSidenavOpen(true);
-  };
-
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-  };
-
   return (
-    <header className="top">
-      <div id="mySidenav" className="sidenav" style={{ width: sidenavOpen ? '250px' : '0' }}>
-        <a href="#" className="closebtn" onClick={closeNav}>&times;</a>
-        <a className={activeLink === 'home' ? 'active' : ''} href="index.html" onClick={() => handleLinkClick('home')}>Home</a>
-        <a className={activeLink === 'about' ? 'active' : ''} href="about.html" onClick={() => handleLinkClick('about')}>About</a>
-        <a className={activeLink === 'recipes' ? 'active' : ''} href="recipes.html" onClick={() => handleLinkClick('recipes')}>Recipes</a>
-        <a className={activeLink === 'blog' ? 'active' : ''} href="blog.html" onClick={() => handleLinkClick('blog')}>Blog</a>
-      </div>
-
-      <nav id="navbar">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4 col-xs-9">
-              <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
-            </div>
-            <div className="col-lg-8 col-xs-3">
-              <div className="social-icons square">
-                <div id="page-content-wrapper">
-                  <span className="slide-menu" onClick={openNav}><i className="fa fa-bars" aria-hidden="true"></i></span>
-                </div>
+    <div className="top-header-area" id="sticker">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 col-sm-12 text-center">
+            <div className="main-menu-wrap">
+              {/* logo */}
+              <div className="site-logo">
+                <NavLink to="/">
+                  <img src="assets/img/logo.png" alt="" />
+                </NavLink>
               </div>
+              {/* logo */}
+
+              {/* menu start */}
+              <nav className="main-menu">
+                <ul>
+                  <li className="current-list-item">
+                    <NavLink to="/">Home</NavLink>
+                    <ul className="sub-menu">
+                      <li>
+                        <NavLink to="/">Static Home</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/index_2">Slider Home</NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <NavLink to="/about">About</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="#">Pages</NavLink>
+                    <ul className="sub-menu">
+                      <li>
+                        <NavLink to="/404">404 page</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/about">About</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/cart">Cart</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/checkout">Check Out</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/contact">Contact</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/news">News</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/shop">Shop</NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <NavLink to="/news">News</NavLink>
+                    <ul className="sub-menu">
+                      <li>
+                        <NavLink to="/news">News</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/single-news">Single News</NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <NavLink to="/contact">Contact</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/shop">Shop</NavLink>
+                    <ul className="sub-menu">
+                      <li>
+                        <NavLink to="/shop">Shop</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/checkout">Check Out</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/single-product">Single Product</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/cart">Cart</NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div className="header-icons">
+                      <a className="shopping-cart" href="/cart">
+                        <FontAwesomeIcon icon={faShoppingCart} />
+                      </a>
+                      <a className="mobile-hide search-bar-icon" href="#">
+                        <FontAwesomeIcon icon={faSearch} />
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+              <a className="mobile-show search-bar-icon" href="#">
+                <FontAwesomeIcon icon={faSearch} />
+              </a>
+              <div className="mobile-menu"></div>
+              {/* menu end */}
             </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </div>
   );
 };
+
+export default Header;

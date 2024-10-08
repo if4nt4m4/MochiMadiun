@@ -1,61 +1,86 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
   return (
-    <footer className="page-footer font-small indigo">
-      <div className="gradient"></div>
-      <div className="container">
-        <div className="row text-center d-flex justify-content-center">
-          <div className="col-md-12">
-            <a href="index.html">
-              <img src="images/footer-logo.png" alt="footer-logo" />
-            </a>
-          </div>
-        </div>
-        <div className="row d-flex text-center justify-content-center mb-md-0 pb-4">
-          <div className="col-md-8 col-12">
-            <address>
-              <p>
-                <span>Feast The Restaurant, 3rd Floor, Beside that building, USA</span>
-                <span>Opening Hours : Mo-Fr 11:00-00:00, Sa-Su 15:00-00:00</span>
-                <span className="call">Call for Bookings : 800 1234 56789</span>
-              </p>
-            </address>
-          </div>
-        </div>
-        <div className="row pb-3">
-          <div className="col-md-12 text-center">
-            <div className="mb-5 flex-center">
-              <a className="fb-ic">
-                <i className="fa fa-facebook-official mr-4" aria-hidden="true"></i>
-              </a>
-              <a className="tw-ic">
-                <i className="fa fa-twitter fa-lg mr-4" aria-hidden="true"></i>
-              </a>
-              <a className="gplus-ic">
-                <i className="fa fa-pinterest fa-lg mr-4" aria-hidden="true"></i>
-              </a>
-              <a className="li-ic">
-                <i className="fa fa-youtube mr-4" aria-hidden="true"></i>
-              </a>
-              <a className="ins-ic">
-                <i className="fa fa-vimeo mr-4" aria-hidden="true"></i>
-              </a>
-              <a className="pin-ic">
-                <i className="fa fa-google-plus fa-lg" aria-hidden="true"></i>
-              </a>
+    <div>
+      {/* Footer */}
+      <div className="footer-area">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3 col-md-6">
+              <div className="footer-box about-widget">
+                <h2 className="widget-title">About us</h2>
+                <p>
+                  Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                  doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="col-sm-12 copy-right">
-            <p>
-              © 2018 Designed by{' '}
-              <a href="https://www.template.net/editable/websites/html5">Template.net</a> &amp; distributed by{' '}
-              <a href="https://themewagon.com/">ThemeWagon</a>
-            </p>
+            <div className="col-lg-3 col-md-6">
+              <div className="footer-box get-in-touch">
+                <h2 className="widget-title">Get in Touch</h2>
+                <ul>
+                  <li>34/8, East Hukupara, Gifirtok, Sadan.</li>
+                  <li>support@fruitkha.com</li>
+                  <li>+00 111 222 3333</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <div className="footer-box pages">
+                <h2 className="widget-title">Pages</h2>
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about">About</a></li>
+                  <li><a href="/shop">Shop</a></li>
+                  <li><a href="/news">News</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6">
+              <div className="footer-box subscribe">
+                <h2 className="widget-title">Subscribe</h2>
+                <p>Subscribe to our mailing list to get the latest updates.</p>
+                <form>
+                  <input type="email" placeholder="Email" />
+                  <button type="submit">
+                    <FontAwesomeIcon icon={faPaperPlane} />
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+      {/* Copyright */}
+      <div className="copyright">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-12">
+              <p>
+                Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>, All Rights Reserved.
+                <br />
+                Distributed By - <a href="https://themewagon.com/">Themewagon</a>
+              </p>
+            </div>
+            <div className="col-lg-6 text-right col-md-12">
+              <div className="social-icons">
+                <ul>
+                  <li><a href="#" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#" target="_blank"><i className="fab fa-twitter"></i></a></li>
+                  <li><a href="#" target="_blank"><i className="fab fa-instagram"></i></a></li>
+                  <li><a href="#" target="_blank"><i className="fab fa-linkedin"></i></a></li>
+                  <li><a href="#" target="_blank"><i className="fab fa-dribbble"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
