@@ -1,6 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
             <div className="col-lg-6 col-md-12">
               <div className="abt-bg">
                 <a href="https://www.youtube.com/watch?v=DBLlFWYcIGQ" className="video-play-btn popup-youtube">
-                  <FontAwesomeIcon icon={faPlay} />
+                  {/* <FontAwesomeIcon icon={faPlay} /> */}
                 </a>
               </div>
             </div>
@@ -34,7 +34,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-8 offset-lg-2 text-center">
-              <div className="section-title">	
+              <div className="section-title">
                 <h3><span className="orange-text">Our</span> Products</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p>
               </div>

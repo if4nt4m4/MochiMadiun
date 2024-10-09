@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
@@ -95,17 +95,17 @@ const Header = () => {
                   <li>
                     <div className="header-icons">
                       <a className="shopping-cart" href="/cart">
-                        <FontAwesomeIcon icon={faShoppingCart} />
+                        {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
                       </a>
                       <a className="mobile-hide search-bar-icon" href="#">
-                        <FontAwesomeIcon icon={faSearch} />
+                        {/* <FontAwesomeIcon icon={faSearch} /> */}
                       </a>
                     </div>
                   </li>
                 </ul>
               </nav>
               <a className="mobile-show search-bar-icon" href="#">
-                <FontAwesomeIcon icon={faSearch} />
+                {/* <FontAwesomeIcon icon={faSearch} /> */}
               </a>
               <div className="mobile-menu"></div>
               {/* menu end */}
