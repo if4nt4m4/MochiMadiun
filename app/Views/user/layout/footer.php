@@ -5,19 +5,19 @@
 				<div class="col-lg-12">
 					<div class="logo-carousel-inner">
 						<div class="single-logo-item">
-							<img src="assets/img/company-logos/Grabfood.png" alt="">
+							<img src="<?=base_url('assets-user')?>/img/company-logos/Grabfood.png" alt="">
 						</div>
 						<div class="single-logo-item">
-							<img src="assets/img/company-logos/Gofood.png" alt="">
+							<img src="<?=base_url('assets-user')?>/img/company-logos/Gofood.png" alt="">
 						</div>
 						<div class="single-logo-item">
-							<img src="assets/img/company-logos/Shopeefood.png" alt="">
+							<img src="<?=base_url('assets-user')?>/img/company-logos/Shopeefood.png" alt="">
 						</div>
 						<div class="single-logo-item">
-							<img src="assets/img/company-logos/Instagram.png" alt="">
+							<img src="<?=base_url('assets-user')?>/img/company-logos/Instagram.png" alt="">
 						</div>
 						<div class="single-logo-item">
-							<img src="assets/img/company-logos/Fb.png" alt="">
+							<img src="<?=base_url('assets-user')?>/img/company-logos/Fb.png" alt="">
 						</div>
 						</div>
 					</div>

@@ -7,7 +7,6 @@
 <!-- features list section -->
 <div class="list-section pt-80 pb-80">
 		<div class="container">
-
 			<div class="row">
 				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
 					<div class="list-box d-flex align-items-center">
@@ -59,7 +58,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
 					<div class="abt-bg">
-						<img src="<?= base_url('assets')?>/img/[LT]-Dinada.png" alt="LOGO">
+						<img src="<?=base_url('assets-user')?>/img/[LT]-Dinada.png" alt="LOGO">
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-12">
@@ -92,7 +91,7 @@
 				<div class="col-lg-4 col-md-6 text-center">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/product-img-1.jpg" alt=""></a>
+							<a href="single-product.html"><img src="<?=base_url('assets-user')?>/img/products/product-img-1.jpg" alt=""></a>
 						</div>
 						<h3>Strawberry</h3>
 						<p class="product-price"><span>Per Kg</span> 85$ </p>
@@ -102,7 +101,7 @@
 				<div class="col-lg-4 col-md-6 text-center">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/product-img-2.jpg" alt=""></a>
+							<a href="single-product.html"><img src="<?=base_url('assets-user')?>/img/products/product-img-2.jpg" alt=""></a>
 						</div>
 						<h3>Berry</h3>
 						<p class="product-price"><span>Per Kg</span> 70$ </p>
@@ -112,7 +111,7 @@
 				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/product-img-3.jpg" alt=""></a>
+							<a href="single-product.html"><img src="<?=base_url('assets-user')?>/img/products/product-img-3.jpg" alt=""></a>
 						</div>
 						<h3>Lemon</h3>
 						<p class="product-price"><span>Per Kg</span> 35$ </p>

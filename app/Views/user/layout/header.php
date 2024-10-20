@@ -7,7 +7,7 @@
 					<!-- logo -->
 					<div class="site-logo">
 						<a href="<?= base_url('/') ?>">
-							<img style="width: 55%;" src="assets/img/[LT]-Dinada.png" alt="Dinada Logo">
+							<img style="width: 55%;" src="<?=base_url('assets-user')?>/img/[LT]-Dinada.png" alt="Dinada Logo">
 						</a>
 					</div>
 						<!-- logo -->
@@ -20,6 +20,7 @@
                                 <li><a href="#">Pages</a>
                                     <ul class="sub-menu">
                                         <li><a href="cart.html">Cart</a></li>
+                                        <li><a href="<?= base_url('produk/detail')?>">Single Product</a></li>
                                         <li><a href="checkout.html">Check Out</a></li>
                                         <li><a href="contact.html">Contact</a></li>
                                         <li><a href="news.html">News</a></li>
@@ -33,13 +34,12 @@
                                     </ul>
                                 </li>
                                 <li><a href="<?= base_url('contact')?>">Contact</a></li>
-                                <li><a href="shop.html">Shop</a>
-                                    <ul class="sub-menu">
+                                <li><a href="<?= base_url('produk')?>">Shop</a>
+                                    <!-- <ul class="sub-menu">
                                         <li><a href="shop.html">Shop</a></li>
                                         <li><a href="checkout.html">Check Out</a></li>
-                                        <li><a href="single-product.html">Single Product</a></li>
                                         <li><a href="cart.html">Cart</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li>
                                     <div class="header-icons">

@@ -72,8 +72,8 @@ $routes->get('/', 'user\Homectrl::index');
 // route halaman about
 $routes->get('about', 'user\Aboutctrl::index');
 // route halaman produk
-$routes->get('services', 'user\Productsctrl::index');
-$routes->get('services/detail/(:num)/(:segment)_(:segment)', 'user\Productsctrl::detail/$1/$2/$3');
+$routes->get('produk', 'user\Produkctrl::index');
+$routes->get('produk/detail/', 'user\Produkctrl::detail');
 // routes halaman aktivitas
 $routes->get('portfolio', 'user\Aktivitasctrl::index');
 $routes->get('portfolio/detail/(:num)/(:segment)_(:segment)', 'user\Aktivitasctrl::detail/$1/$2/$3');
